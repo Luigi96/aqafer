@@ -54,7 +54,7 @@ jobs:
           elif "macos-x64" in '${{ inputs.pool }}':
             github_runner = "config='macos-11'"
           elif "macos-arm64" in '${{ inputs.pool }}':
-            github_runner = "config=['self-hosted', 'macOS', 'ARM64']"
+            github_runner = "config='macos-13-arm64'"
           else:
             github_runner = "config='${{ inputs.pool }}'"
 
